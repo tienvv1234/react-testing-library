@@ -73,3 +73,16 @@ quick detour for BDD: behavior-driven development
 + involves collaboration between alots of roles
 	+ developers, QA, business partners, etc
 + defines process for defferent groups to interact
+
+Accessibility and finding elements
+Testing library recommends finding elements by accessibility handles
+- https://testing-library.com/docs/guide-which-query/
+create-react-app's example test uses getBytext
+- ok for non-interactive elements
+- better: getByRole
+Roles documentation: https://www.w3.org/TR/wai-aria/#role_definitions
++ some elements have built-in roles: button, a
+Can't find an element like a screen reader would?
+- Then your app isn't friendly to screen readers
+much more about queries and roles later
+
