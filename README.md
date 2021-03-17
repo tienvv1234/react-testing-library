@@ -86,3 +86,11 @@ Can't find an element like a screen reader would?
 - Then your app isn't friendly to screen readers
 much more about queries and roles later
 
+### unit testing function
+- Functions separate from components
++ Used by several components
++ complex logic
+- Unit test if
++ complex logic difficult  to test via functional tests
++ too many edge cases
+
