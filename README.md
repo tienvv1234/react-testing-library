@@ -162,3 +162,27 @@ Testing library recommends finding elements by accessibility handles
 `npm install eslint-plugin-testing-library eslint-plugin-jest-dom`
 
 ### Styleing
+
+### Screen query methods
+
+command[All]ByQueryType
+command:
+
+- get: expect element to be in DOM
+- query: expect element not to be in DOM
+- find: expect element to appear async
+
+[All]
+
+- (exclude) expect only one match
+- (include) expect more than one match
+
+QueryType
+
+- Role (most preferred)
+- AltText (images)
+- Text (display elements)
+- Form elements
+  - PlaceholderText
+  - LabelText
+  - DisplayValue
