@@ -20,7 +20,7 @@ function App() {
 				onClick={() => setButtonColor(newButtonColor)}
 				disabled={disabled}
 			>
-				Change to {newButtonColor}
+				Change to {replaceCamelWithSpaces(newButtonColor)}
 			</button>
 			<input
 				type='checkbox'
