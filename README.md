@@ -186,3 +186,23 @@ QueryType
   - PlaceholderText
   - LabelText
   - DisplayValue
+
+https://testing-library.com/docs/queries/about/#priority
+https://testing-library.com/docs/react-testing-library/cheatsheet/
+https://testing-library.com/docs/queries/about/
+
+### Issue not wrapped in act(...)
+
+React updated element after test was finished
+Don't want to follow the advice to warp in act(...)
+
+- Testing library alteady does this for us
+- https://testing-library.com/docs/preact-testing-library/api/#act
+  To remedy this error:
+- Determine what changes after the test is over (async)
+- Account for the change in test by:
+  - awaiting the change, and asserting on it
+  - https://kentcdodds.com/blog/fix-the-not-wrapped-in-act-warning/
+
+how to await
+https://testing-library.com/docs/guide-disappearance/
